@@ -1,0 +1,44 @@
+/* === Reset y base === */
+body {
+    scroll-behavior: smooth;
+  }
+  
+  /* Enlaces generales */
+  a {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  a:hover {
+    color: #1d4ed8; /* azul más fuerte */
+    text-decoration: none;
+  }
+  
+  /* Transición más suave para hover en las tarjetas */
+  .card-hover:hover {
+    transform: translateY(-4px);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  /* Personalización para títulos */
+  h1, h2, h3 {
+    letter-spacing: -0.5px;
+  }
+  
+  /* Botón base (puedes usar esta clase cuando quieras) */
+  .btn {
+    @apply bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition;
+  }
+  
+  /* Animación suave de entrada */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CJ | Full Stack Developer</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg" />
 </head>
 <body class="bg-white text-gray-800 font-sans">
@@ -24,24 +26,24 @@
     <h2 class="text-3xl font-semibold text-blue-700 mb-8">Proyectos Destacados</h2>
 
     <div class="grid gap-8 md:grid-cols-2">
-      <div class="border border-blue-200 p-6 rounded-xl shadow hover:shadow-lg transition">
+      <div class="card-hover border border-blue-200 p-6 rounded-xl shadow hover:shadow-lg transition">
         <h3 class="text-2xl font-bold text-blue-700">Web SuministrosRubio</h3>
         <p class="mt-2">Sitio web profesional desarrollado para la empresa SuministrosRubio, enfocado en ofrecer soluciones intuitivas y visualmente atractivas.</p>
-        <p class="mt-2 text-sm text-gray-600">Tecnologías: HTML, CSS, Angular, Hosting</p>
+        <p class="mt-2 text-sm text-gray-600">Tecnologías: HTML, SASS, Angular, Hosting</p>
         <a href="https://suministrosrubio.com/web/" class="inline-block mt-4 text-blue-600 underline">Ver proyecto</a>
       </div>
 
-      <div class="border border-blue-200 p-6 rounded-xl shadow hover:shadow-lg transition">
+      <div class="card-hover border border-blue-200 p-6 rounded-xl shadow hover:shadow-lg transition">
         <h3 class="text-2xl font-bold text-blue-700">Node API REST Connector</h3>
         <p class="mt-2">Aplicación que actúa como puente entre sistemas, exponiendo una API REST desarrollada en Node.js para conectar servicios internos.</p>
-        <p class="mt-2 text-sm text-gray-600">Tecnologías: Node.js, Express, REST</p>
+        <p class="mt-2 text-sm text-gray-600">Tecnologías: Node TS, Express, REST</p>
         <a href="#" class="inline-block mt-4 text-blue-600 underline">GitHub próximamente</a>
       </div>
     </div>
   </main>
 
   <footer class="text-center py-6 text-gray-500">
-    © 2025 Cristian Jimenez Martinez — Hecho con 💙 y café
+    <span id="year"></span> Cristian Jimenez Martinez — Hecho con 💙 y café
   </footer>
 </body>
 </html>
