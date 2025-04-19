@@ -9,41 +9,44 @@
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg" />
 </head>
-<body class="bg-white text-gray-800 font-sans">
-  <header class="text-center py-12 bg-blue-100">
-    <h1 class="text-4xl font-bold text-blue-700">Cristian Jimenez Martinez</h1>
-    <p class="text-xl mt-2">Full Stack Developer & Friendly Human Being</p>
-    <p class="mt-4 max-w-xl mx-auto">Soy CJ, un desarrollador con buen rollo, pasión por el código y una sonrisa lista para cualquier reunión. Me encanta crear cosas útiles, conectar ideas y trabajar con buena gente.</p>
-    <div class="mt-6 flex justify-center gap-4">
-      <a href="https://github.com/CristianJimenezMartinez" class="text-blue-600 underline">GitHub</a>
-      <a href="https://www.linkedin.com/in/cristian-jimenez-martinez/" class="text-blue-600 underline">LinkedIn</a>
-      <a href="mailto:cristianjimeneztrabajo@gmail.com" class="text-blue-600 underline">Email</a>
-      <!-- <a href="#" class="text-blue-600 underline">Descargar CV</a> -->
+<body class="body-base">
+  <header class="header">
+    <h1 class="main-title">Cristian Jimenez Martinez</h1>
+    <p class="subtitle">Full Stack Developer & Friendly Human Being</p>
+    <p class="description">Soy CJ, un desarrollador con buen rollo, pasión por el código y una sonrisa lista para cualquier reunión. Me encanta crear cosas útiles, conectar ideas y trabajar con buena gente.</p>
+    <div class="nav-links">
+      <a href="https://github.com/CristianJimenezMartinez">GitHub</a>
+      <a href="https://www.linkedin.com/in/cristian-jimenez-martinez/">LinkedIn</a>
+      <a href="mailto:cristianjimeneztrabajo@gmail.com">Email</a>
+      <!-- <a href="#">Descargar CV</a> -->
     </div>
   </header>
 
-  <main class="py-12 px-6 max-w-5xl mx-auto">
-    <h2 class="text-3xl font-semibold text-blue-700 mb-8">Proyectos Destacados</h2>
+  <main class="main-content">
+    <h2 class="section-title">Proyectos Destacados</h2>
 
-    <div class="grid gap-8 md:grid-cols-2">
-      <div class="card-hover border border-blue-200 p-6 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-2xl font-bold text-blue-700">Web SuministrosRubio</h3>
-        <p class="mt-2">Sitio web profesional desarrollado para la empresa SuministrosRubio, enfocado en ofrecer soluciones intuitivas y visualmente atractivas.</p>
-        <p class="mt-2 text-sm text-gray-600">Tecnologías: HTML, SASS, Angular, Hosting</p>
-        <a href="https://suministrosrubio.com/web/" class="inline-block mt-4 text-blue-600 underline">Ver proyecto</a>
+    <div class="projects-grid">
+      <div class="project-card card-hover">
+        <h3 class="project-title">Web SuministrosRubio</h3>
+        <p class="project-desc">Sitio web profesional desarrollado para la empresa SuministrosRubio, enfocado en ofrecer soluciones intuitivas y visualmente atractivas.</p>
+        <p class="project-tech">Tecnologías: HTML, SASS, Angular, Hosting</p>
+        <a href="https://suministrosrubio.com/web/">Ver proyecto</a>
       </div>
 
-      <div class="card-hover border border-blue-200 p-6 rounded-xl shadow hover:shadow-lg transition">
-        <h3 class="text-2xl font-bold text-blue-700">Node API REST Connector</h3>
-        <p class="mt-2">Aplicación que actúa como puente entre sistemas, exponiendo una API REST desarrollada en Node.js para conectar servicios internos.</p>
-        <p class="mt-2 text-sm text-gray-600">Tecnologías: Node TS, Express, REST</p>
-        <a href="#" class="inline-block mt-4 text-blue-600 underline">GitHub próximamente</a>
+      <div class="project-card card-hover">
+        <h3 class="project-title">Node API REST Connector</h3>
+        <p class="project-desc">Aplicación que actúa como puente entre sistemas, exponiendo una API REST desarrollada en Node.js para conectar servicios internos.</p>
+        <p class="project-tech">Tecnologías: Node TS, Express, REST</p>
+        <a href="#">GitHub próximamente</a>
       </div>
     </div>
   </main>
 
-  <footer class="text-center py-6 text-gray-500">
+  <footer class="footer">
     <span id="year"></span> Cristian Jimenez Martinez — Hecho con 💙 y café
   </footer>
+  <script>
+    document.getElementById("year").textContent = `© ${new Date().getFullYear()}`;
+  </script>
 </body>
 </html>
