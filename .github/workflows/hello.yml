@@ -1,0 +1,13 @@
+name: ¡Hola, CI!
+
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Saludo desde GitHub Actions
+        run: echo "¡Hola, este es mi primer CI!"
