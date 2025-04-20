@@ -103,6 +103,26 @@ body.body-base {
     color: #4b5563; /* text-gray-600 */
   }
   
+  .project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .btn-alt {
+    color: #2563eb;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .btn-alt:hover {
+    color: #1d4ed8;
+    text-decoration: none;
+  }
+  
   .footer {
     text-align: center;
     padding: 1.5rem 0;
