@@ -1,0 +1,29 @@
+name: 🚀 Deploy Static Site to GitHub Pages
+
+# Se dispara en cada push a main
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Trae tu código
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. (Opcional) instala dependencias si las tuvieras
+      # - name: Install dependencies
+      #   run: npm ci
+
+      # 3. Publica los archivos estáticos de la raíz en GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # Usa el token que GitHub pone a tu disposición
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Carpeta raíz del sitio; aquí van tu index.html, CSS, JS...
+          publish_dir: ./
