@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* === Reset y base === */
 body.body-base {
     background-color: white;
@@ -150,4 +151,158 @@ body.body-base {
       transform: translateY(0);
     }
   }
+=======
+/* === Reset y base === */
+body.body-base {
+    background-color: white;
+    color: #1f2937; /* text-gray-800 */
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    scroll-behavior: smooth;
+  }
+  
+  .header {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #dbeafe; /* bg-blue-100 */
+  }
+  
+  .main-title {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700;
+    color: #1d4ed8; /* text-blue-700 */
+  }
+  
+  .subtitle {
+    font-size: 1.25rem; /* text-xl */
+    margin-top: 0.5rem;
+  }
+  
+  .description {
+    margin-top: 1rem;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .nav-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .nav-links a {
+    color: #2563eb; /* text-blue-600 */
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: #1d4ed8;
+  }
+  
+  /* Main content */
+  .main-content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+    color: #1d4ed8;
+    margin-bottom: 2rem;
+  }
+  
+  /* Projects grid */
+  .projects-grid {
+    display: grid;
+    gap: 2rem;
+  }
+  @media (min-width: 768px) {
+    .projects-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  
+  .project-card {
+    border: 1px solid #bfdbfe; /* border-blue-200 */
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+  }
+  .project-card:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1d4ed8;
+  }
+  
+  .project-desc {
+    margin-top: 0.5rem;
+  }
+  
+  .project-tech {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: #4b5563; /* text-gray-600 */
+  }
+  
+  .project-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .btn-alt {
+    color: #2563eb;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .btn-alt:hover {
+    color: #1d4ed8;
+    text-decoration: none;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    color: #6b7280; /* text-gray-500 */
+  }
+  
+  /* Enlaces generales */
+  a {
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+  }
+  a:hover {
+    color: #1d4ed8;
+    text-decoration: none;
+  }
+  
+  /* Animación suave (no usada aún pero lista) */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+>>>>>>> c98fde5 (📁 Agrego archivos del portfolio y workflow de despliegue)
   
