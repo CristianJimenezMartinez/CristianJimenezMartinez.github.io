@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript / TypeScript | Portfolio CJ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="../../script.js"></script>
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../assets/CJ.png" />
+</head>
+<body class="body-base">
+  <header class="header">
+    <nav class="navbar">
+      <div class="container">
+        <a href="../../index.html" class="logo">
+          <img src="../../assets/logo-bordes-redondeados.png" alt="Logo CJ">
+          <span class="sr-only">Cristian Jimenez Martinez</span>
+        </a>
+        <ul class="menu">
+          <li><a href="../../index.html">Inicio</a></li>
+          <li>
+            <button type="button">
+              Proyectos
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.938l3.71-3.71a.75.75 0 011.08 1.04l-4.24 4.24a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+            <ul class="submenu">
+              <li><a href="../../proyectos/suministrosrubio.html">SuministrosRubio</a></li>
+              <li><a href="../../proyectos/node-api.html">Conector Factusol</a></li>
+              <li><a href="#reservas-saas">Reservas SaaS</a></li>
+            </ul>
+          </li>
+          <li>
+            <button type="button">
+              Lenguajes
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.938l3.71-3.71a.75.75 0 011.08 1.04l-4.24 4.24a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z" clip-rule="evenodd"/>
+              </svg>
+            </button>
+            <ul class="submenu">
+              <li><a href="">JavaScript</a></li>
+              <li><a href="node/index.html">Node.js</a></li>
+              <li><a href="angular/index.html">Angular</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="main-title mt-16">JavaScript</h1>
+    <p class="subtitle">Guía de ejemplos.</p>
+  </header>
+
+  <main class="main-content">
+    <!-- Sección de Documentación -->
+    <section id="lenguajes-js" class="fade-in">
+      <!-- 1. Introducción -->
+      <h2 class="section-title">1. Introducción</h2>
+      <p>JavaScript es un lenguaje de programación interpretado, orientado a objetos y usado principalmente en la web para interactividad.</p>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+ &lt;head&gt;
+   &lt;meta charset="UTF-8"&gt;
+   &lt;title&gt;Hola JS&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+   &lt;script&gt;
+     console.log('¡Hola, mundo!');
+   &lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+      <!-- 2. Conceptos básicos -->
+      <h2 class="section-title">2. Conceptos básicos</h2>
+      <h3 class="font-semibold">2.1 Variables y tipos</h3>
+      <pre><code>let nombre = 'Alice';
+const edad = 30;
+var esDev = true;
+console.log(typeof nombre); // 'string'</code></pre>
+
+      <h3 class="font-semibold">2.2 Operadores</h3>
+      <pre><code>let suma = 5 + 3;
+console.log(5 === '5'); // false
+console.log(true && false); // false</code></pre>
+
+      <!-- 3. Estructuras de control -->
+      <h2 class="section-title">3. Estructuras de control</h2>
+      <h3 class="font-semibold">3.1 Condicionales</h3>
+      <pre><code>if (edad >= 18) {
+  console.log('Mayor de edad');
+} else {
+  console.log('Menor de edad');
+}</code></pre>
+
+      <h3 class="font-semibold">3.2 Bucles</h3>
+      <pre><code>for (let i = 0; i &lt; 5; i++) console.log(i);
+let j = 0;
+while (j &lt; 3) { console.log(j); j++; }</code></pre>
+
+      <!-- 4. Funciones y ámbito -->
+      <h2 class="section-title">4. Funciones y ámbito</h2>
+      <h3 class="font-semibold">4.1 Arrow Functions</h3>
+      <pre><code>const saludar = nombre =&gt; `Hola, ${nombre}`;
+const sumar = (a, b) =&gt; a + b;</code></pre>
+
+      <!-- 5. Objetos y Arrays -->
+      <h2 class="section-title">5. Objetos y Arrays</h2>
+      <pre><code>const persona = { nombre: 'Bob', edad: 25 };
+const nums = [1,2,3,4];
+const dobles = nums.map(n =&gt; n*2);</code></pre>
+
+      <!-- 6. ES6+ -->
+      <h2 class="section-title">6. ES6+ y características modernas</h2>
+      <pre><code>const { nombre, edad } = persona;
+async function tarea() {
+  await new Promise(r =&gt; setTimeout(r, 1000));
+  console.log('¡Listo!');
+}</code></pre>
+
+      <!-- 7. DOM -->
+      <h2 class="section-title">7. Manipulación del DOM</h2>
+      <pre><code>const btn = document.querySelector('button');
+btn.addEventListener('click', () =&gt; btn.textContent = '¡Clic!');</code></pre>
+
+      <!-- 9. Técnicas avanzadas -->
+      <h2 class="section-title">8. Técnicas avanzadas</h2>
+      <h3 class="font-semibold">Closures</h3>
+      <pre><code>function contador() {
+  let count = 0;
+  return () =&gt; ++count;
+}
+const c = contador(); c(); // 1</code></pre>
+
+      <!-- Enlace para volver -->
+      <div class="project-links mt-6">
+        <a href="../../index.html" class="btn-alt"><strong>Volver al inicio</strong></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span id="year"></span> Cristian Jimenez Martinez — Hecho con 💙 y café
+  </footer>
+</body>
+</html>
