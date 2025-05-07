@@ -11,14 +11,49 @@
 </head>
 <body class="body-base">
   <header class="header">
-    <nav class="fixed top-0 left-0 p-4 bg-white shadow-md w-full z-50">
-      <ul class="flex gap-4 justify-center text-blue-600 font-semibold">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="./suministrosrubio.html">SuministrosRubio</a></li>
-        <li><a href="node-api.html" class="underline font-bold">Node API</a></li>
-        <li><a href="#lenguajes">Lenguajes</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="container">
+        <a href="../index.html" class="logo">
+          <img src="../assets/logo-bordes-redondeados.png" alt="Logo CJ">
+          <span class="sr-only">Cristian Jimenez Martinez</span>
+        </a>
+        <ul class="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li>
+            <button type="button">
+              Proyectos
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.938l3.71-3.71a.75.75 0 011.08 1.04l-4.24 4.24a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"/>
+              </svg>
+            </button>
+            <ul class="submenu">
+              <li><a href="suministrosrubio.html">SuministrosRubio</a></li>
+              <li><a href="">Conector Factusol</a></li>
+              <li><a href="#reservas-saas">Reservas SaaS</a></li>
+            </ul>
+          </li>
+          <li>
+            <button type="button">
+              Lenguajes
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.938l3.71-3.71a.75.75 0 011.08 1.04l-4.24 4.24a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"/>
+              </svg>
+            </button>
+            <ul class="submenu">
+              <li><a href="#lenguajes-js">JavaScript / TypeScript</a></li>
+              <li><a href="#lenguajes-node">Node.js</a></li>
+              <li><a href="#lenguajes-angular">Angular</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </nav>
+    
+    
     <h1 class="main-title mt-16">Node API REST Connector</h1>
     <p class="subtitle">Conector entre Factusol y otras aplicaciones</p>
     <p class="text-sm text-gray-500 mt-1">Actualmente en fase beta, pero completamente funcional.</p>
@@ -53,9 +88,5 @@
   <footer class="footer mt-12 text-center text-gray-500 py-6">
     <span id="year"></span> Cristian Jimenez Martinez — Hecho con 💙 y café
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
