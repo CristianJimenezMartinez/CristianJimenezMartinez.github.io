@@ -14,7 +14,7 @@
     <h1 class="main-title">Cristian Jimenez Martinez</h1>
     <nav class="fixed top-0 left-0 p-4 bg-white shadow-md w-full z-50">
       <ul class="flex gap-4 justify-center text-blue-600 font-semibold">
-        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html" class="underline font-bold">Inicio</a></li>
         <li><a href="./proyectos/suministrosrubio.html">SuministrosRubio</a></li>
         <li><a href="./proyectos/node-api.html">Node API</a></li>
         <li><a href="#lenguajes">Lenguajes</a></li>
@@ -26,7 +26,6 @@
       <a href="https://github.com/CristianJimenezMartinez">GitHub</a>
       <a href="https://www.linkedin.com/in/cristian-jimenez-martinez/">LinkedIn</a>
       <a href="mailto:cristianjimeneztrabajo@gmail.com">Email</a>
-      <!-- <a href="#">Descargar CV</a> -->
     </div>
   </header>
 
@@ -37,14 +36,18 @@
       <div class="project-card card-hover">
         <h3 class="project-title">Web SuministrosRubio</h3>
         <p class="project-desc">Sitio web profesional desarrollado para la empresa SuministrosRubio, enfocado en ofrecer soluciones intuitivas y visualmente atractivas.</p>
-        <p class="project-tech">Tecnologías: HTML, SASS, Angular, Hosting</p>
-        <a href="./proyectos/suministrisrubio.html">Ver proyecto</a>
+        <p class="project-tech">Tecnologías: HTML, SASS, Angular, Responsive Design, Hosting</p>
+        <a href="./proyectos/suministrosrubio.html">Ver proyecto</a>
       </div>
 
       <div class="project-card card-hover">
         <h3 class="project-title">Node API REST Connector</h3>
-        <p class="project-desc">Aplicación que actúa como puente entre sistemas, exponiendo una API REST desarrollada en Node.js + TypeScript para conectar servicios internos.</p>
-        <p class="project-tech">Tecnologías: Node TS, Express, REST</p>
+        <p class="project-desc">
+          Este proyecto actúa como conector entre Factusol y sistemas externos, exponiendo servicios mediante API REST y WebSockets. Desarrollado en <strong>Node.js</strong> y <strong>TypeScript</strong> con <strong>Express.js</strong>, incorpora autenticación, manejo de errores, middleware personalizado y configuración de <strong>CORS</strong>; además integra pasarelas de pago <strong>Stripe</strong> y <strong>PayPal</strong>, notificaciones vía <strong>SMTP</strong>, transferencia de archivos por <strong>FTP</strong> y <strong>Webhooks</strong>. La capa de datos utiliza <strong>PostgreSQL</strong> y la comunicación con Factusol se realiza a través de <strong>OLE DB</strong>. Asimismo, incluye un módulo de <strong>generación automática de facturas</strong>, agilizando el flujo de facturación. Actualmente en fase beta, pero completamente funcional.
+        </p>
+        <ul class="project-tech mb-4">
+          <li><strong>Tecnologías usadas:</strong> Node.js y TypeScript, Express.js, API REST, WebSockets, CORS, Stripe, PayPal, PostgreSQL, OLE DB, SMTP, FTP, Webhooks y facturación automatizada</li>
+        </ul>
         <a href="./proyectos/node-api.html">Ver proyecto</a>
       </div>
     </div>
@@ -53,8 +56,7 @@
   <footer class="footer">
     <span id="year"></span> Cristian Jimenez Martinez — Hecho con 💙 y café
   </footer>
-  <script>
-    document.getElementById("year").textContent = `© ${new Date().getFullYear()}`;
-  </script>
+
+  <script defer src="script.js"></script>
 </body>
 </html>

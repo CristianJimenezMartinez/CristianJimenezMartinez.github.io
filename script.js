@@ -1,1 +1,4 @@
-document.getElementById("year").textContent = `© ${new Date().getFullYear()}`;
+const elYear = document.getElementById("year");
+if (elYear) {
+  elYear.textContent = `© ${new Date().getFullYear()}`;
+}
