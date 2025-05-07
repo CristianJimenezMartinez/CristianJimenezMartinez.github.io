@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Node API REST Connector | Proyecto CJ</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="../script.js"></script>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../assets/CJ.png" />
+</head>
+<body class="body-base">
+  <header class="header">
+    <nav class="fixed top-0 left-0 p-4 bg-white shadow-md w-full z-50">
+      <ul class="flex gap-4 justify-center text-blue-600 font-semibold">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./suministrosrubio.html">SuministrosRubio</a></li>
+        <li><a href="node-api.html" class="underline font-bold">Node API</a></li>
+        <li><a href="#lenguajes">Lenguajes</a></li>
+      </ul>
+    </nav>
+    <h1 class="main-title mt-16">Node API REST Connector</h1>
+    <p class="subtitle">Conector entre Factusol y otras aplicaciones</p>
+    <p class="text-sm text-gray-500 mt-1">Actualmente en fase beta, pero completamente funcional.</p>
+  </header>
+
+  <main class="main-content">
+    <section class="fade-in">
+      <p class="project-desc mb-4">
+        Este proyecto actúa como conector entre Factusol y sistemas externos, exponiendo servicios mediante una API REST y WebSockets. 
+        Desarrollado en <strong>Node.js</strong> y <strong>TypeScript</strong> con <strong>Express.js</strong>, incorpora autenticación, manejo de errores, middleware personalizado y configuración de <strong>CORS</strong>; además integra pasarelas de pago <strong>Stripe</strong> y <strong>PayPal</strong>, notificaciones vía <strong>SMTP</strong>, transferencia de archivos por <strong>FTP</strong> y <strong>Webhooks</strong>. 
+        La capa de datos utiliza <strong>PostgreSQL</strong> y la comunicación con Factusol se realiza a través de <strong>OLE DB</strong>. 
+        Asimismo, incluye un módulo para <strong>generación automática de facturas</strong>, agilizando el flujo de facturación directamente desde la API.
+      </p>
+
+      <ul class="project-tech mb-4">
+        <li><strong>Tecnologías usadas:</strong> Node.js y TypeScript, Express.js, API REST, WebSockets, CORS, Stripe (pasarelas de pago), PayPal, PostgreSQL, OLE DB, SMTP, FTP, Webhooks y facturación automatizada</li>
+      </ul>
+
+      <img src="../assets/conector.png" alt="Captura del conector en acción" class="rounded-xl shadow mb-6 max-w-full">
+
+      <div class="project-links">
+        <a href="https://github.com/CristianJimenezMartinez/Bentian_Conector_Factusol_Node_TS" class="btn">
+          <strong>Ver código en GitHub</strong>
+        </a>
+        <a href="../index.html" class="btn-alt">
+          <strong>Volver al inicio</strong>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer mt-12 text-center text-gray-500 py-6">
+    <span id="year"></span> Cristian Jimenez Martinez — Hecho con 💙 y café
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

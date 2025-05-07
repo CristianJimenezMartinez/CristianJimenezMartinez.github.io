@@ -8,7 +8,7 @@ body.body-base {
   
   .header {
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 4rem;
     padding-bottom: 3rem;
     background-color: #dbeafe; /* bg-blue-100 */
   }
@@ -55,6 +55,12 @@ body.body-base {
     padding-right: 1.5rem;
     max-width: 80rem;
     margin: 0 auto;
+  }
+
+  .main-content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .section-title {
