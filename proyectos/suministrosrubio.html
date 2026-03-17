@@ -1,91 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Web SuministrosRubio | Proyecto CJ</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script defer src="../script.js"></script>
-  <link rel="stylesheet" href="../style.css">
-  <link rel="icon" href="../assets/CJ.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web SuministrosRubio | Proyecto CJ</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/CJ.png">
+    <script defer src="../script.js"></script>
 </head>
-<body class="body-base">
-  <header class="header">
-    <nav class="navbar">
-      <div class="container">
-        <a href="../index.html" class="logo">
-          <img src="../assets/logo-bordes-redondeados.png" alt="Logo CJ">
-          <span class="sr-only">Cristian Jimenez Martinez</span>
-        </a>
-        <ul class="menu">
-          <li><a href="../index.html">Inicio</a></li>
-          <li>
-            <button type="button">
-              Proyectos
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.938l3.71-3.71a.75.75 0 011.08 1.04l-4.24 4.24a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
-                      clip-rule="evenodd"/>
-              </svg>
-            </button>
-            <ul class="submenu">
-              <li><a href="">SuministrosRubio</a></li>
-              <li><a href="node-api.html">Conector Factusol</a></li>
-              <li><a href="#reservas-saas">Reservas SaaS</a></li>
+<body>
+    <div class="bg-glow-container">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+        <div class="glow-blob blob-3"></div>
+    </div>
+    <nav class="navbar" id="main-nav">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo-bordes-redondeados.png" alt="Logo CJ">
+                <span>CJ</span>
+            </a>
+            <ul class="menu">
+                <li><a href="../index.html#inicio">Inicio</a></li>
+                <li><a href="../index.html#proyectos">Proyectos</a></li>
+                <li><a href="https://linkedin.com/in/cristian-jimenez-martinez/" target="_blank">Contacto</a></li>
             </ul>
-          </li>
-          <li>
-            <button type="button">
-              Lenguajes
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.938l3.71-3.71a.75.75 0 011.08 1.04l-4.24 4.24a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
-                      clip-rule="evenodd"/>
-              </svg>
-            </button>
-            <ul class="submenu">
-              <li><a href="../lenguajes/javascript/javascript.html">JavaScript</a></li>
-              <li><a href="#lenguajes-node">Node.js</a></li>
-              <li><a href="#lenguajes-angular">Angular</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+        </div>
     </nav>
-    
-    
-    <h1 class="main-title">Web Suministros Rubio</h1>
-    <p class="subtitle">Proyecto real para empresa de Suministros Rubio</p>
-  </header>
 
-  <main class="main-content">
-    <section class="fade-in">
-        <p class="project-desc mb-4">
-            Web eCommerce completa desarrollada para <strong>Suministros Rubio</strong>, con funcionalidades de registro, login de usuario, carrito de compras y pasarelas de pago integradas mediante Stripe y PayPal. 
-            El frontend está construido en Angular v19.2.4 y se comunica con un backend seguro desarrollado en Node.js + TypeScript, que actúa como conector API REST, gestionando autenticación, lógica de negocio y middleware personalizado.
-        </p>
+    <header class="hero" style="height: 60vh; min-height: 400px; animation: contentReveal 1s ease-out forwards;">
+        <h1 class="main-title">Web Suministros Rubio</h1>
+        <p class="subtitle reveal active">Solución eCommerce Real para Suministros Industriales</p>
+        <div class="nav-links reveal active">
+            <a href="https://suministrosrubio.com/" class="btn-primary" target="_blank">Visitar Sitio Web</a>
+            <a href="https://github.com/CristianJimenezMartinez/suministroRubioWeb" class="btn-secondary" target="_blank">GitHub</a>
+        </div>
+    </header>
 
-      <ul class="project-tech mb-4">
-        <li><strong>Tecnologías usadas:</strong> HTML, SASS, Angular, Responsive Design, Hosting</li>
-      </ul>
+    <main class="main-content">
+        <section style="animation: contentReveal 1s ease-out 0.2s forwards; opacity: 0;">
+            <div class="project-tech" style="justify-content: center; margin-bottom: 2rem;">
+                <span class="tech-tag">Angular v19</span>
+                <span class="tech-tag">SASS</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Stripe</span>
+                <span class="tech-tag">PayPal</span>
+            </div>
+            
+            <p class="project-desc" style="font-size: 1.1rem; max-width: 800px; margin: 0 auto 3rem; text-align: center;">
+                Una plataforma de comercio electrónico de nivel empresarial. Este proyecto destaca por su integración 
+                fluida entre un frontend moderno en <strong>Angular</strong> y un backend seguro en <strong>Node.js</strong>, 
+                ofreciendo una experiencia de compra rápida, segura y totalmente adaptable.
+            </p>
 
-      <img src="../assets/suministrosrubio.png" alt="Captura del sitio" class="rounded-xl shadow mb-6 max-w-full">
-      <div class="project-links">
-        <a href="https://suministrosrubio.com/web/" class="btn">
-          <strong>Visitar el sitio</strong>
-        </a>
-        <a href="https://github.com/CristianJimenezMartinez/suministroRubioWeb" class="btn">
-          <strong>Ver código en GitHub</strong>
-        </a>
-        <a href="../index.html" class="btn-alt">
-          <strong>Volver al inicio</strong>
-        </a>
-      </div>
-    </section>
-  </main>
+            <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius); padding: 2.5rem; margin-bottom: 4rem;">
+                <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--accent-color);">Impacto y Resultados</h3>
+                <ul style="color: var(--text-secondary); list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <li>✓ UX optimizada para altas tasas de conversión</li>
+                    <li>✓ Sistema de carrito de compras reactivo</li>
+                    <li>✓ Pasarelas de pago Stripe y PayPal certificadas</li>
+                    <li>✓ Backend escalable con TypeScript</li>
+                    <li>✓ SEO técnico implementado para visibilidad</li>
+                    <li>✓ Diseño 100% responsivo y Mobile-First</li>
+                </ul>
+            </div>
 
-  <footer class="footer mt-12">
-    <span id="year"></span> Cristian Jimenez Martinez — Hecho con 💙 y café
-  </footer>
+            <img src="../assets/suministrosrubio.png" alt="Captura del sitio en acción" style="width: 100%; border-radius: var(--border-radius); border: 1px solid var(--border-color); box-shadow: 0 20px 40px rgba(0,0,0,0.4);">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container reveal">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">CJ</a>
+                <p>Full Stack Developer apasionado por crear soluciones digitales que marcan la diferencia. Comprometido con la calidad y la innovación.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="../index.html#inicio">Inicio</a></li>
+                    <li><a href="../index.html#proyectos">Proyectos</a></li>
+                    <li><a href="https://linkedin.com/in/cristian-jimenez-martinez/" target="_blank">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Conectemos</h4>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/cristian-jimenez-martinez/" class="social-icon" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://github.com/CristianJimenezMartinez" class="social-icon" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Cristian Jimenez Martinez. Todos los derechos reservados.</p>
+            <p>Diseñado con pasión por CJ</p>
+        </div>
+    </footer>
 </body>
 </html>

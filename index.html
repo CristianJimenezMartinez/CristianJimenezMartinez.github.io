@@ -1,101 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CJ | Full Stack Developer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script defer src="script.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="./assets/CJ.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CJ | Full Stack Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Cristian Jimenez Martinez (CJ) - Full Stack Developer apasionado por crear soluciones digitales elegantes y eficientes. Especialista en Node.js, Angular y arquitecturas cloud.">
+    <meta name="keywords" content="Full Stack Developer, Node.js, Angular, Cristian Jimenez Martinez, CJ, Portfolio, Web Development">
+    <meta name="author" content="Cristian Jimenez Martinez">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="CJ | Full Stack Developer">
+    <meta property="og:description" content="Descubre los proyectos y la experiencia de Cristian Jimenez Martinez, desarrollador Full Stack especializado en tecnologías modernas.">
+    <meta property="og:image" content="./assets/CJ.png">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/CJ.png">
+    <script defer src="script.js"></script>
 </head>
-<body class="body-base">
-  <header class="header">
-    <h1 class="main-title">Cristian Jimenez Martinez</h1>
-    <nav class="navbar">
-      <div class="container">
-        <a href="index.html" class="logo">
-          <img src="assets/logo-bordes-redondeados.png" alt="Logo CJ">
-          <span class="sr-only">Cristian Jimenez Martinez</span>
-        </a>
-        <ul class="menu">
-          <li><a href="index.html">Inicio</a></li>
-          <li>
-            <button type="button">
-              Proyectos
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.938l3.71-3.71a.75.75 0 011.08 1.04l-4.24 4.24a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
-                      clip-rule="evenodd"/>
-              </svg>
-            </button>
-            <ul class="submenu">
-              <li><a href="proyectos/suministrosrubio.html">SuministrosRubio</a></li>
-              <li><a href="proyectos/node-api.html">Conector Factusol</a></li>
-              <li><a href="#reservas-saas">Reservas SaaS</a></li>
+<body>
+    <div class="bg-glow-container">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+        <div class="glow-blob blob-3"></div>
+    </div>
+    <nav class="navbar" id="main-nav">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo-bordes-redondeados.png" alt="Logo CJ">
+                <span>CJ</span>
+            </a>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="https://linkedin.com/in/cristian-jimenez-martinez/" target="_blank">Contacto</a></li>
             </ul>
-          </li>
-          <li>
-            <button type="button">
-              Lenguajes
-              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd"
-                      d="M5.23 7.21a.75.75 0 011.06.02L10 10.938l3.71-3.71a.75.75 0 011.08 1.04l-4.24 4.24a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
-                      clip-rule="evenodd"/>
-              </svg>
-            </button>
-            <ul class="submenu">
-              <li><a href="lenguajes/javascript/javascript.html">JavaScript</a></li>
-              <li><a href="#lenguajes-node">Node.js</a></li>
-              <li><a href="#lenguajes-angular">Angular</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+        </div>
     </nav>
-    
-    
-    <p class="subtitle">Full Stack Developer & Friendly Human Being</p>
-    <p class="description">Soy CJ, un desarrollador con buen rollo, pasión por el código y una sonrisa lista para cualquier reunión. Me encanta crear cosas útiles, conectar ideas y trabajar con buena gente.</p>
-    <div class="nav-links">
-      <a href="https://github.com/CristianJimenezMartinez">GitHub</a>
-      <a href="https://www.linkedin.com/in/cristian-jimenez-martinez/">LinkedIn</a>
-      <a href="mailto:cristianjimeneztrabajo@gmail.com">Email</a>
-    </div>
-  </header>
 
-  <main class="main-content">
-    <h2 class="section-title"><strong>Proyectos Destacados</strong></h2>
+    <header class="hero" id="inicio">
+        <h1 class="main-title reveal">Cristian Jimenez Martinez</h1>
+        <p class="subtitle reveal">Full Stack Developer & Software Architect</p>
+        <p class="description reveal">
+            Soy un desarrollador comprometido con la excelencia técnica y el diseño intuitivo. 
+            Me especializo en construir aplicaciones robustas, escalables y visualmente impactantes 
+            que resuelven problemas reales.
+        </p>
+        <div class="nav-links reveal">
+            <a href="#proyectos" class="btn-primary">Ver Proyectos</a>
+            <a href="https://github.com/CristianJimenezMartinez" class="btn-secondary" target="_blank">GitHub</a>
+        </div>
+    </header>
 
-    <div class="projects-grid">
-      <!-- Proyecto: Web SuministrosRubio -->
-      <div class="project-card card-hover">
-        <h3 class="project-title">Web SuministrosRubio</h3>
-        <p class="project-desc">Sitio web profesional desarrollado para la empresa SuministrosRubio, enfocado en ofrecer soluciones intuitivas y visualmente atractivas.</p>
-        <p class="project-tech">Tecnologías: HTML, SASS, Angular, Responsive Design, Hosting</p>
-        <a href="./proyectos/suministrosrubio.html">Ver proyecto</a>
-      </div>
+    <main class="main-content" id="proyectos">
+        <h2 class="section-title reveal">Proyectos Destacados</h2>
 
-      <!-- Proyecto: Node API REST Connector -->
-      <div class="project-card card-hover">
-        <h3 class="project-title">Node API REST Connector</h3>
-        <p class="project-desc">Conector x64 para Factusol que expone API REST y WebSockets, con facturación automática y pagos con Stripe/PayPal.</p>
-        <p class="project-tech">Tecnologías: Node.js, TypeScript, Express.js, REST API, WebSockets, CORS, Stripe, PayPal, PostgreSQL, OLE DB, SMTP, FTP y Webhooks</p>
-        <a href="./proyectos/node-api.html">Ver proyecto</a>
-      </div>
+        <div class="projects-grid">
+            <!-- Proyecto: Conector Factusol -->
+            <a href="./proyectos/node-api.html" class="project-card reveal">
+                <h3 class="project-title">Node API REST Connector</h3>
+                <div class="project-tech">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Stripe</span>
+                    <span class="tech-tag">WebSockets</span>
+                </div>
+                <p class="project-desc">
+                    Potente conector x64 para Factusol que expone una infraestructura API REST completa. Incluye facturación automatizada, sincronización en tiempo real y pasarelas de pago integradas.
+                </p>
+            </a>
 
-      <!-- Proyecto: Reservas SaaS -->
-      <div class="project-card card-hover">
-        <h3 class="project-title">Reservas SaaS</h3>
-        <p class="project-desc">Plataforma de reservas en la nube, desplegada en Google Cloud y consumiendo la API de Reservas de Google.</p>
-        <p class="project-tech">Tecnologías: Terraform, Kubernetes, Docker, Node.js, React</p>
-        <a href="#reservas-saas">Ver proyecto</a>
-      </div>
-    </div>
-  </main>
+            <!-- Proyecto: ReviLike -->
+            <a href="./proyectos/revilike.html" class="project-card reveal">
+                <h3 class="project-title">ReviLike.com</h3>
+                <div class="project-tech">
+                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">OpenAI API</span>
+                    <span class="tech-tag">Serverless</span>
+                    <span class="tech-tag">AI Wrapper</span>
+                </div>
+                <p class="project-desc">
+                    Plataforma SaaS para la gestión automatizada de reseñas mediante IA. Genera respuestas personalizadas y empáticas en segundos para optimizar la reputación online.
+                </p>
+            </a>
 
-  <footer class="footer">
-    <span id="year"></span> Cristian Jimenez Martinez — Hecho con 💙 y café
-  </footer>
+            <!-- Proyecto: SuministrosRubio -->
+            <a href="./proyectos/suministrosrubio.html" class="project-card reveal">
+                <h3 class="project-title">Web SuministrosRubio</h3>
+                <div class="project-tech">
+                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">SASS</span>
+                    <span class="tech-tag">Responsive</span>
+                    <span class="tech-tag">Cloud Hosting</span>
+                </div>
+                <p class="project-desc">
+                    Plataforma corporativa de alto rendimiento diseñada para una experiencia de usuario fluida. Enfoque en diseño adaptable y optimización de carga.
+                </p>
+            </a>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container reveal">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">CJ</a>
+                <p>Full Stack Developer apasionado por crear soluciones digitales que marcan la diferencia. Comprometido con la calidad y la innovación.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="https://linkedin.com/in/cristian-jimenez-martinez/" target="_blank">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Conectemos</h4>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/cristian-jimenez-martinez/" class="social-icon" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://github.com/CristianJimenezMartinez" class="social-icon" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Cristian Jimenez Martinez. Todos los derechos reservados.</p>
+            <p>Diseñado con pasión por CJ</p>
+        </div>
+    </footer>
 </body>
 </html>
