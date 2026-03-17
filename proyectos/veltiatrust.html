@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VeltiaTrust | Proyecto CJ</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../assets/CJ.png">
+    <script defer src="../script.js"></script>
+</head>
+<body>
+    <div class="bg-glow-container">
+        <div class="glow-blob blob-1"></div>
+        <div class="glow-blob blob-2"></div>
+        <div class="glow-blob blob-3"></div>
+    </div>
+    <nav class="navbar" id="main-nav">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <img src="../assets/logo-bordes-redondeados.png" alt="Logo CJ">
+                <span>CJ</span>
+            </a>
+            <ul class="menu">
+                <li><a href="../index.html#inicio">Inicio</a></li>
+                <li><a href="../index.html#proyectos">Proyectos</a></li>
+                <li><a href="https://linkedin.com/in/cristian-jimenez-martinez/" target="_blank">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 60vh; min-height: 400px; animation: contentReveal 1s ease-out forwards;">
+        <h1 class="main-title">VeltiaTrust</h1>
+        <p class="subtitle">Infraestructura API-First para Notarización Legal Digital</p>
+        <div class="nav-links">
+            <a href="https://veltiatrust.com/" class="btn-primary" target="_blank">Visitar VeltiaTrust.com</a>
+            <a href="../index.html#proyectos" class="btn-secondary">Volver a Proyectos</a>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section style="animation: contentReveal 1s ease-out 0.2s forwards; opacity: 0;">
+            <div class="project-tech" style="justify-content: center; margin-bottom: 2rem;">
+                <span class="tech-tag">API-First</span>
+                <span class="tech-tag">eIDAS</span>
+                <span class="tech-tag">Zero-Storage</span>
+                <span class="tech-tag">Edge Computing</span>
+                <span class="tech-tag">EUDI Wallet</span>
+            </div>
+            
+            <p class="project-desc" style="font-size: 1.1rem; max-width: 800px; margin: 0 auto 3rem; text-align: center;">
+                <strong>VeltiaTrust</strong> es una infraestructura de grado industrial diseñada para proporcionar confianza y notarización legal. 
+                Especializada en sectores de alta criticidad como las telecomunicaciones, facilita firmas electrónicas y sellado de tiempo cualificado cumpliendo estrictamente con la normativa europea.
+            </p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-bottom: 4rem;">
+                <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius); padding: 2rem;">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1rem; color: var(--accent-color);">Privacidad y Rendimiento</h3>
+                    <ul style="color: var(--text-secondary); list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 1rem;"><strong>Zero-Storage:</strong> Los documentos nunca abandonan la infraestructura del cliente; solo se procesan hashes inmutables.</li>
+                        <li style="margin-bottom: 1rem;"><strong>Latencia Ultra-Baja:</strong> Optimizado para respuestas inferiores a 50ms, ideal para flujos de venta masivos.</li>
+                        <li><strong>EUDI Wallet Bridge:</strong> Conexión estandarizada con las carteras de identidad digital europeas.</li>
+                    </ul>
+                </div>
+
+                <div style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius); padding: 2rem;">
+                    <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 1rem; color: var(--accent-color);">Cumplimiento eIDAS</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1rem;">
+                        Garantía jurídica total convertida en código:
+                    </p>
+                    <ul style="color: var(--text-secondary); list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 0.5rem;">✓ Evidencia inmutable con eIDAS Binding.</li>
+                        <li style="margin-bottom: 0.5rem;">✓ Proveedor de sellado de tiempo (TSA) cualificado.</li>
+                        <li>✓ Auditoría completa de evidencias legales.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="background: var(--bg-accent); border: 1px solid var(--accent-soft); border-radius: var(--border-radius); padding: 2.5rem; text-align: center; margin-bottom: 4rem;">
+                <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Impacto en el Sector</h3>
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; color: var(--text-secondary);">
+                    <div style="flex: 1; min-width: 200px;">
+                        <p style="font-weight: 600; color: var(--accent-color); font-size: 1.2rem;">Escalabilidad B2B</p>
+                        <p>Modelo SaaS por volumen con SLAs prioritarios.</p>
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <p style="font-weight: 600; color: var(--accent-color); font-size: 1.2rem;">Fricción Cero</p>
+                        <p>Digitalización de procesos de contratación masiva.</p>
+                    </div>
+                    <div style="flex: 1; min-width: 200px;">
+                        <p style="font-weight: 600; color: var(--accent-color); font-size: 1.2rem;">Developer-Friendly</p>
+                        <p>Normativas complejas simplificadas en APIs JSON claras.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container reveal">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">CJ</a>
+                <p>Full Stack Developer apasionado por crear soluciones digitales que marcan la diferencia. Comprometido con la calidad y la innovación.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="../index.html#inicio">Inicio</a></li>
+                    <li><a href="../index.html#proyectos">Proyectos</a></li>
+                    <li><a href="https://linkedin.com/in/cristian-jimenez-martinez/" target="_blank">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h4>Conectemos</h4>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/cristian-jimenez-martinez/" class="social-icon" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="https://github.com/CristianJimenezMartinez" class="social-icon" target="_blank">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Cristian Jimenez Martinez. Todos los derechos reservados.</p>
+            <p>Diseñado con pasión por CJ</p>
+        </div>
+    </footer>
+</body>
+</html>
